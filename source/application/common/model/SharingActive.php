@@ -3,6 +3,7 @@
 namespace app\common\model;
 
 use think\Cache;
+use think\Request;
 
 /**
  * 拼单活动

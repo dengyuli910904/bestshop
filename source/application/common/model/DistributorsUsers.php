@@ -25,6 +25,9 @@ class DistributorsUsers extends BaseModel
     {
         $request = Request::instance();
         $filter = [];
+        if(isset($request->request('search')){
+            $filter['username'] = ['like','%'.trim($request->request('search')).'%'];
+        }
         $status > 0 && $filter['status'] = $status;
         return $this->order(['create_time' => 'desc'])
             ->where($filter)
