@@ -11,6 +11,10 @@ use app\store\controller\Controller;
 
 class Setting extends Controller
 {
+	public function index(){
+		$data = [];
+		return $this->fetch('index', compact('data'));
+	}
     public function qrcode(){
 //        $model = new ApplyModel();
 //        $list = $model->getList(ApplyModel::STATUS_APPLY);

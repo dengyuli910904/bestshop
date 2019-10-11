@@ -6,6 +6,23 @@
                     <div class="widget-title am-cf">分销申请</div>
                 </div>
                 <div class="widget-body am-fr">
+                    <div class="page_toolbar am-margin-bottom-xs am-cf">
+                            <form class="toolbar-form" action="<?= url('/store/apps.dealer.apply/index') ?>">
+                                <input type="hidden" name="s" value="/store/apps.dealer.apply/index">
+                                <div class="am-u-sm-12 am-u-md-9 am-u-sm-push-3">
+                                    <div class="am fr">
+                                        <div class="am-form-group am-fl">
+                                            <div class="am-input-group am-input-group-sm tpl-form-border-form">
+                                                <input type="text" class="am-form-field" name="search" placeholder="请输入昵称/姓名/手机号" value="">
+                                                <div class="am-input-group-btn">
+                                                    <button class="am-btn am-btn-default am-icon-search" type="submit"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                   </div>
 <!--                    <div class="am-u-sm-12 am-u-md-6 am-u-lg-6">-->
 <!--                        <div class="am-form-group">-->
 <!--                            <div class="am-btn-toolbar">-->
