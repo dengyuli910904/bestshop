@@ -54,7 +54,7 @@
         </div>
     </header>
     <!-- 侧边导航栏 -->
-    <div class="left-sidebar">
+    <div class="left-sidebar dis-flex">
         <?php $menus = $menus ?: []; ?>
         <?php $group = $group ?: 0; ?>
         <!-- 一级菜单 -->

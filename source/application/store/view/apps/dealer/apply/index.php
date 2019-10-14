@@ -6,6 +6,7 @@
                     <div class="widget-title am-cf">分销申请</div>
                 </div>
                 <div class="widget-body am-fr">
+<!--                    工具栏-->
                     <div class="page_toolbar am-margin-bottom-xs am-cf">
                             <form class="toolbar-form" action="<?= url('/store/apps.dealer.apply/index') ?>">
                                 <input type="hidden" name="s" value="/store/apps.dealer.apply/index">
@@ -23,18 +24,6 @@
                                 </div>
                             </form>
                    </div>
-<!--                    <div class="am-u-sm-12 am-u-md-6 am-u-lg-6">-->
-<!--                        <div class="am-form-group">-->
-<!--                            <div class="am-btn-toolbar">-->
-<!--                                <div class="am-btn-group am-btn-group-xs">-->
-<!--                                    <a class="am-btn am-btn-default am-btn-success am-radius"-->
-<!--                                       href="--><?//= url('goods/add') ?><!--">-->
-<!--                                        <span class="am-icon-plus"></span> 新增-->
-<!--                                    </a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
                     <div class="am-scrollable-horizontal am-u-sm-12">
                         <table width="100%" class="am-table am-table-compact am-table-striped
                          tpl-table-black am-text-nowrap">

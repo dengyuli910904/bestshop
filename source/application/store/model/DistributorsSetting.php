@@ -7,9 +7,23 @@
  */
 
 namespace app\store\model;
+use app\common\model\DistributorsSetting as SettingModel;
 
 
-class DistributorsSetting
+class DistributorsSetting extends SettingModel
 {
+    public function saveSetting($data){
+        foreach($data as $key=>$item){
+            $setting = $this->find($key);
+            if($setting){
+                $this->edit($key,$item);
+            }else{
+                $this->add($key,$item);
+            }
+        }
+    }
 
+    public function getConfig($key){
+        return $this->getConfigs()[$key];
+    }
 }

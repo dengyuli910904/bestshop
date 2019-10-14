@@ -7,26 +7,30 @@
                     <div class="widget-body">
                         <div class="am-tabs am-margin-top" data-am-tabs="{noSwipe: 1}">
                             <ul class="am-tabs-nav am-nav am-nav-tabs">
-                                <li class=""><a href="https://demo.yiovo.com/index.php?s=/store/apps.dealer.setting/index#tab1">基础设置</a></li>
-                                <li class=""><a href="https://demo.yiovo.com/index.php?s=/store/apps.dealer.setting/index#tab2">分销商条件</a></li>
-                                <li class=""><a href="https://demo.yiovo.com/index.php?s=/store/apps.dealer.setting/index#tab3">佣金设置</a></li>
-                                <li class="am-active"><a href="https://demo.yiovo.com/index.php?s=/store/apps.dealer.setting/index#tab4">结算</a></li>
-                                <li><a href="https://demo.yiovo.com/index.php?s=/store/apps.dealer.setting/index#tab5">自定义文字</a></li>
-                                <li><a href="https://demo.yiovo.com/index.php?s=/store/apps.dealer.setting/index#tab6">申请协议</a></li>
-                                <li><a href="https://demo.yiovo.com/index.php?s=/store/apps.dealer.setting/index#tab7">页面背景图</a></li>
-                                <li><a href="https://demo.yiovo.com/index.php?s=/store/apps.dealer.setting/index#tab8">模板消息</a></li>
+                                <li class="am-active"><a href="#tab1">基础设置</a></li>
+                                <li><a href="#tab2">分销商条件</a></li>
+                                <li><a href="#tab3">佣金设置</a></li>
+                                <li><a href="#tab4">结算</a></li>
+                                <li><a href="#tab5">自定义文字</a></li>
+                                <li><a href="#tab6">申请协议</a></li>
+                                <li><a href="#tab7">页面背景图</a></li>
+                                <li><a href="#tab8">模板消息</a></li>
                             </ul>
                             <div class="am-tabs-bd">
-                                <div class="am-tab-panel am-margin-top-lg" id="tab1">
+                                <div class="am-tab-panel am-margin-top-lg am-active am-in" id="tab1">
                                     <div class="am-form-group">
                                         <label class="am-u-sm-3 am-form-label form-require"> 是否开启分销功能 </label>
                                         <div class="am-u-sm-9">
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[basic][is_open]" value="1" data-am-ucheck="" checked="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[basic][is_open]" value="1" data-am-ucheck="" checked="" class="am-ucheck-radio">
+                                                <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i>
+                                                </span>
                                                 开启
                                             </label>
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[basic][is_open]" value="0" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[basic][is_open]" value="0" data-am-ucheck="" class="am-ucheck-radio">
+                                                <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i>
+                                                </span>
                                                 关闭
                                             </label>
                                         </div>
@@ -143,7 +147,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="am-tab-panel am-margin-top-lg am-active am-in" id="tab4">
+                                <div class="am-tab-panel am-margin-top-lg" id="tab4">
                                     <div class="am-form-group">
                                         <label class="am-u-sm-3 am-form-label form-require"> 提现方式 </label>
                                         <div class="am-u-sm-9">

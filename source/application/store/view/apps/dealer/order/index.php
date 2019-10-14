@@ -6,6 +6,39 @@
                     <div class="widget-title am-cf"><?= $title ?></div>
                 </div>
                 <div class="widget-body am-fr">
+
+                    <div class="page_toolbar am-margin-bottom-xs am-cf">
+                        <form class="toolbar-form" action="">
+                            <input type="hidden" name="s" value="/store/apps.dealer.order/index">
+                            <input type="hidden" name="user_id" value="">
+                            <div class="am-u-sm-12 am-u-md-9 am-u-sm-push-3">
+                                <div class="am fr">
+                                    <div class="am-form-group am-fl">
+                                        <select name="is_settled" data-am-selected="{btnSize: 'sm', placeholder: '是否结算佣金'}" style="display: none;">
+                                            <option value=""></option>
+                                            <option value="-1">
+                                                全部
+                                            </option>
+                                            <option value="0">
+                                                未结算
+                                            </option>
+                                            <option value="1">
+                                                已结算
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="am-form-group am-fl" style="width: 80px;">
+                                        <div class="am-input-group am-input-group-sm tpl-form-border-form">
+                                            <div class="am-input-group-btn">
+                                                <button class="am-btn am-btn-default am-icon-search" type="submit"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
                     <div class="order-list am-scrollable-horizontal am-u-sm-12 am-margin-top-xs">
                         <table width="100%" class="am-table am-table-centered
                         am-text-nowrap am-margin-bottom-xs">
