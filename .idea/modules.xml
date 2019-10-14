@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/bestshop-php.iml" filepath="$PROJECT_DIR$/.idea/bestshop-php.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bestshop.iml" filepath="$PROJECT_DIR$/.idea/bestshop.iml" />
     </modules>
   </component>
 </project>

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\common\model;
+namespace app\store\model;
 
 use app\common\model\SharingOrder as orderModel;
 

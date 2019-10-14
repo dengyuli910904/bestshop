@@ -3,6 +3,7 @@
 namespace app\common\model;
 
 use think\Cache;
+use think\Request;
 
 /**
  * 拼单售后管理
@@ -11,7 +12,7 @@ use think\Cache;
  */
 class SharingRefund extends BaseModel
 {
-    protected $name = 'sharing_refund';
+    protected $name = 'sharing_refunds';
 
     public function getList()
     {
