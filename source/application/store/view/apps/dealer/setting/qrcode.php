@@ -45,11 +45,25 @@
                                             <input type="radio" value="square" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 正方形</label> <label class="am-radio-inline"><input type="radio" value="circle" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 圆形</label>
                                     </div>
                                 </div>
-                                <div class="am-form-group am-padding-top"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 昵称字体大小 </label> <div class="am-u-sm-9 am-u-md-8"><input type="number" min="12" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$"></div></div> <div class="am-form-group"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 昵称字体颜色 </label> <div class="am-u-sm-9 am-u-md-8"><input type="color" class="tpl-form-input"></div></div> <div class="am-form-group am-padding-top"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码宽度 </label> <div class="am-u-sm-9 am-u-md-8"><input type="number" min="50" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$"></div></div> <div class="am-form-group"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码样式 </label> <div class="am-u-sm-9 am-u-md-8"><label class="am-radio-inline"><input type="radio" value="square" data-am-ucheck="" checked="checked" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 正方形</label> <label class="am-radio-inline"><input type="radio" value="circle" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 圆形</label>
+                                <div class="am-form-group am-padding-top">
+                                    <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 昵称字体大小 </label>
+                                    <div class="am-u-sm-9 am-u-md-8">
+                                        <input type="number" min="12" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
-                                    <div class="am-u-sm-9 am-u-sm-push-3 am-margin-top-lg"><button type="submit" class="j-submit am-btn am-btn-secondary">提交</button>
+                                    <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 昵称字体颜色 </label>
+                                    <div class="am-u-sm-9 am-u-md-8">
+                                        <input type="color" class="tpl-form-input">
+                                    </div>
+                                </div>
+                                <div class="am-form-group am-padding-top">
+                                    <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码宽度 </label> <div class="am-u-sm-9 am-u-md-8"><input type="number" min="50" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$"></div></div> <div class="am-form-group"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码样式 </label> <div class="am-u-sm-9 am-u-md-8"><label class="am-radio-inline"><input type="radio" value="square" data-am-ucheck="" checked="checked" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 正方形</label> <label class="am-radio-inline"><input type="radio" value="circle" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 圆形</label>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3 am-margin-top-lg">
+                                        <button type="submit" class="j-submit am-btn am-btn-secondary">提交</button>
                                     </div>
                                 </div>
                             </form>

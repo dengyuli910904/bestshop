@@ -34,9 +34,14 @@ class Setting extends Controller
 		return $this->fetch('index', compact('data'));
 	}
     public function qrcode(){
-//        $model = new ApplyModel();
-//        $list = $model->getList(ApplyModel::STATUS_APPLY);
-        $data = [];
+        $model = new SettingModel();
+        $request = Request::instance();
+        if($request->method() === 'POST'){
+            $data['qrcode'] = '';
+            $result = $model->saveSetting($data);
+            return $this->renderSuccess('添加成功', url('apps.dealer.setting/index'));
+        }
+        $data = $model->getConfig('qrcode');
         return $this->fetch('qrcode', compact('data'));
     }
 }

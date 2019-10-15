@@ -22,15 +22,11 @@
                                         <label class="am-u-sm-3 am-form-label form-require"> 是否开启分销功能 </label>
                                         <div class="am-u-sm-9">
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[basic][is_open]" value="1" data-am-ucheck="" checked="" class="am-ucheck-radio">
-                                                <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i>
-                                                </span>
+                                                <input type="radio" name="setting[basic][is_open]" value="0" data-am-ucheck="" <?= ($data['basic']->is_open == 0? 'checked':'') ?> class="am-ucheck-radio">
                                                 开启
                                             </label>
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[basic][is_open]" value="0" data-am-ucheck="" class="am-ucheck-radio">
-                                                <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i>
-                                                </span>
+                                                <input type="radio" name="setting[basic][is_open]" value="1" data-am-ucheck="" <?= ($data['basic']->is_open == 1? 'checked':'') ?> class="am-ucheck-radio">
                                                 关闭
                                             </label>
                                         </div>
@@ -39,15 +35,15 @@
                                         <label class="am-u-sm-3 am-form-label form-require"> 分销层级 </label>
                                         <div class="am-u-sm-9">
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[basic][level]" value="1" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[basic][level]" value="1" <?= ($data['basic']->level == 1? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 一级分销
                                             </label>
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[basic][level]" value="2" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[basic][level]" value="2" <?= ($data['basic']->level == 2? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 二级分销
                                             </label>
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[basic][level]" value="3" data-am-ucheck="" checked="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[basic][level]" value="3" <?= ($data['basic']->level == 3? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 三级分销
                                             </label>
                                         </div>
@@ -56,11 +52,11 @@
                                         <label class="am-u-sm-3 am-form-label form-require"> 分销商内购 </label>
                                         <div class="am-u-sm-9">
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[basic][self_buy]" value="1" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[basic][self_buy]" value="1" <?= ($data['basic']->self_buy == 1? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 开启
                                             </label>
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[basic][self_buy]" value="0" data-am-ucheck="" checked="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[basic][self_buy]" value="0" <?= ($data['basic']->self_buy == 0? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 关闭
                                             </label>
                                             <div class="help-block">
@@ -74,11 +70,11 @@
                                         <label class="am-u-sm-3 am-form-label form-require"> 成为分销商条件 </label>
                                         <div class="am-u-sm-9">
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[condition][become]" value="10" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[condition][become]" value="10" <?= ($data['condition']->become == 10? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 需后台审核
                                             </label>
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[condition][become]" value="20" data-am-ucheck="" checked="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[condition][become]" value="20" <?= ($data['condition']->become == 20? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 无需审核
                                             </label>
                                         </div>
@@ -87,11 +83,11 @@
                                         <label class="am-u-sm-3 am-form-label form-require"> 购买指定商品成为分销商 </label>
                                         <div class="am-u-sm-9">
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[condition][become__buy_goods]" value="0" data-am-ucheck="" checked="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[condition][become__buy_goods]" value="0" <?= ($data['condition']->become__buy_goods == 0? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 关闭
                                             </label>
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[condition][become__buy_goods]" value="1" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[condition][become__buy_goods]" value="1" <?= ($data['condition']->become__buy_goods == 1? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 开启
                                             </label>
                                             <div class="help-block">
@@ -112,7 +108,7 @@
                                         <label class="am-u-sm-3 am-form-label form-require"> 成为下线条件 </label>
                                         <div class="am-u-sm-9">
                                             <label class="am-radio-inline">
-                                                <input type="radio" name="setting[condition][downline]" value="10" data-am-ucheck="" checked="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="radio" name="setting[condition][downline]" value="10" <?= ($data['condition']->downline == 10? 'checked':'') ?> data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 首次点击分享链接
                                             </label>
                                         </div>
@@ -124,7 +120,7 @@
                                             一级佣金比例
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="number" min="0" max="100" class="tpl-form-input" name="setting[commission][first_money]" value="0" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                            <input type="number" min="0" max="100" class="tpl-form-input" name="setting[commission][first_money]" value="<?= $data['commission']->first_money ?>" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                             <small>佣金比例范围 0% - 100%</small>
                                         </div>
                                     </div>
@@ -133,7 +129,7 @@
                                             二级佣金比例
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="number" min="0" max="100" class="tpl-form-input" name="setting[commission][second_money]" value="0" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                            <input type="number" min="0" max="100" class="tpl-form-input" name="setting[commission][second_money]" value="<?= $data['commission']->second_money ?>" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                             <small>佣金比例范围 0% - 100%</small>
                                         </div>
                                     </div>
@@ -142,7 +138,7 @@
                                             三级佣金比例
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="number" min="0" max="100" class="tpl-form-input" name="setting[commission][third_money]" value="0" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                            <input type="number" min="0" max="100" class="tpl-form-input" name="setting[commission][third_money]" value="<?= $data['commission']->third_money ?>" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                             <small>佣金比例范围 0% - 100%</small>
                                         </div>
                                     </div>
@@ -152,15 +148,15 @@
                                         <label class="am-u-sm-3 am-form-label form-require"> 提现方式 </label>
                                         <div class="am-u-sm-9">
                                             <label class="am-checkbox-inline">
-                                                <input type="checkbox" name="setting[settlement][pay_type][]" value="10" data-am-ucheck="" class="am-ucheck-checkbox"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="checkbox" name="setting[settlement][pay_type][]" value="10" <?= in_array("10", $data['settlement']->pay_type) ? "checked": "" ?> data-am-ucheck="" class="am-ucheck-checkbox"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 微信支付
                                             </label>
                                             <label class="am-checkbox-inline">
-                                                <input type="checkbox" name="setting[settlement][pay_type][]" value="20" data-am-ucheck="" checked="" class="am-ucheck-checkbox"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="checkbox" name="setting[settlement][pay_type][]" value="20" <?= in_array("20", $data['settlement']->pay_type) ? "checked": "" ?> data-am-ucheck="" class="am-ucheck-checkbox"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 支付宝
                                             </label>
                                             <label class="am-checkbox-inline">
-                                                <input type="checkbox" name="setting[settlement][pay_type][]" value="30" data-am-ucheck="" checked="" class="am-ucheck-checkbox"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
+                                                <input type="checkbox" name="setting[settlement][pay_type][]" value="30" <?= in_array("30", $data['settlement']->pay_type) ? "checked": "" ?> data-am-ucheck="" class="am-ucheck-checkbox"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
                                                 银行卡
                                             </label>
                                             <div class="help-block">
@@ -173,7 +169,7 @@
                                             最低提现额度
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="number" min="0" class="tpl-form-input" name="setting[settlement][min_money]" value="10.00" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                            <input type="number" min="0" class="tpl-form-input" name="setting[settlement][min_money]" value="<?= $data['settlement']->min_money ?>" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                         </div>
                                     </div>
                                     <div class="am-form-group am-padding-top">
@@ -181,7 +177,7 @@
                                             佣金结算天数
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="number" min="0" class="tpl-form-input" name="setting[settlement][settle_days]" value="10" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                            <input type="number" min="0" class="tpl-form-input" name="setting[settlement][settle_days]" value="<?= $data['settlement']->settle_days ?>" required="" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                             <div class="help-block">
                                                 <small>当订单完成n天后，该订单的分销佣金才会结算到分销商余额，如果设置为0天 则订单完成时就结算</small>
                                             </div>
@@ -200,7 +196,8 @@
                                             页面标题
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][index][title][value]" value="分销中心" required="">
+
+                                            <input type="text" class="tpl-form-input" name="setting[words][index][title][value]" value="<?= $data['words']->index->title->value ?? "分销中心" ?>" required="">
                                             <small>
                                                 默认：分销中心</small>
                                         </div>
@@ -210,7 +207,7 @@
                                             非分销商提示
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][not_dealer][value]" value="您还不是分销商，请先提交申请" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][not_dealer][value]" value="<?= $data['words']->index->words->not_dealer->value ?? "您还不是分销商,请先申请" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -218,7 +215,7 @@
                                             申请成为分销商
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][apply_now][value]" value="立即加入" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][apply_now][value]" value="<?= $data['words']->index->words->apply_now->value ?? "立即加入" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -226,7 +223,7 @@
                                             推荐人
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][referee][value]" value="推荐人" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][referee][value]" value="<?= $data['words']->index->words->referee->value ?? "推荐人" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -234,7 +231,7 @@
                                             可提现佣金
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][money][value]" value="可提现" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][money][value]" value="<?= $data['words']->index->words->money->value ?? "可提现" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -242,7 +239,7 @@
                                             待提现佣金
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][freeze_money][value]" value="待提现" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][freeze_money][value]" value="<?= $data['words']->index->words->freeze_money->value ?? "待体现" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -250,7 +247,7 @@
                                             已提现金额
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][total_money][value]" value="已提现金额" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][total_money][value]" value="<?= $data['words']->index->words->total_money->value ?? "已提现金额" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -258,7 +255,7 @@
                                             去提现
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][withdraw][value]" value="去提现" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][index][words][withdraw][value]" value="<?= $data['words']->index->words->withdraw->value ?? "去提现" ?>" required="">
                                         </div>
                                     </div>
 
@@ -270,7 +267,7 @@
                                             页面标题
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][apply][title][value]" value="申请成为分销商" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][apply][title][value]" value="<?= $data['words']->apply->title->value ?? "申请成为分销商" ?>" required="">
                                             <small>
                                                 默认：申请成为分销商</small>
                                         </div>
@@ -280,7 +277,7 @@
                                             请填写申请信息
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][title][value]" value="请填写申请信息" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][title][value]" value="<?= $data['words']->apply->words->title->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -288,7 +285,7 @@
                                             分销商申请协议
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][license][value]" value="分销商申请协议" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][license][value]" value="<?= $data['words']->apply->words->license->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -296,7 +293,7 @@
                                             申请成为经销商
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][submit][value]" value="申请成为经销商" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][submit][value]" value="<?= $data['words']->apply->words->submit->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -304,7 +301,7 @@
                                             审核中提示信息
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][wait_audit][value]" value="您的申请已受理，正在进行信息核验，请耐心等待。" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][wait_audit][value]" value="<?= $data['words']->apply->words->wait_audit->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -312,7 +309,7 @@
                                             去商城逛逛
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][goto_mall][value]" value="去商城逛逛" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][apply][words][goto_mall][value]" value="<?= $data['words']->apply->words->goto_mall->value ?? "" ?>" required="">
                                         </div>
                                     </div>
 
@@ -324,7 +321,7 @@
                                             页面标题
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][order][title][value]" value="分销订单" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][order][title][value]" value="<?= $data['words']->order->title->value ?? "分销订单" ?>" required="">
                                             <small>
                                                 默认：分销订单</small>
                                         </div>
@@ -334,7 +331,7 @@
                                             全部
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][order][words][all][value]" value="全部" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][order][words][all][value]" value="<?= $data['words']->order->words->all->value ?? "全部" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -342,7 +339,7 @@
                                             未结算
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][order][words][unsettled][value]" value="未结算" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][order][words][unsettled][value]" value="<?= $data['words']->order->words->unsettled->value ?? "未结算" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -350,7 +347,7 @@
                                             已结算
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][order][words][settled][value]" value="已结算" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][order][words][settled][value]" value="<?= $data['words']->order->words->settled->value ?? "已结算" ?>" required="">
                                         </div>
                                     </div>
 
@@ -362,7 +359,7 @@
                                             页面标题
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][team][title][value]" value="我的团队" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][team][title][value]" value="<?= $data['words']->team->title->value ?? "我的团队" ?>" required="">
                                             <small>
                                                 默认：我的团队</small>
                                         </div>
@@ -372,7 +369,7 @@
                                             团队总人数
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][team][words][total_team][value]" value="团队总人数" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][team][words][total_team][value]" value="<?= $data['words']->team->words->total_team->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -380,7 +377,7 @@
                                             一级团队
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][team][words][first][value]" value="一级团队" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][team][words][first][value]" value="<?= $data['words']->team->words->first->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -388,7 +385,7 @@
                                             二级团队
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][team][words][second][value]" value="二级团队" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][team][words][second][value]" value="<?= $data['words']->team->words->second->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -396,7 +393,7 @@
                                             三级团队
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][team][words][third][value]" value="三级团队" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][team][words][third][value]" value="<?= $data['words']->team->words->third->value ?? "" ?>" required="">
                                         </div>
                                     </div>
 
@@ -408,7 +405,7 @@
                                             页面标题
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][title][value]" value="提现明细" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][title][value]" value="<?= $data['words']->withdraw_list->title->value ?? "体现明细" ?>" required="">
                                             <small>
                                                 默认：提现明细</small>
                                         </div>
@@ -418,7 +415,7 @@
                                             全部
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][all][value]" value="全部" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][all][value]" value="<?= $data['words']->withdraw_list->words->all->value ?? "全部" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -426,7 +423,7 @@
                                             审核中
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][apply_10][value]" value="审核中" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][apply_10][value]" value="<?= $data['words']->withdraw_list->words->apply_10->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -434,7 +431,7 @@
                                             审核通过
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][apply_20][value]" value="审核通过" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][apply_20][value]" value="<?= $data['words']->withdraw_list->words->apply_20->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -442,7 +439,7 @@
                                             已打款
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][apply_40][value]" value="已打款" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][apply_40][value]" value="<?= $data['words']->withdraw_list->words->apply_40->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -450,7 +447,7 @@
                                             驳回
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][apply_30][value]" value="驳回" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_list][words][apply_30][value]" value="<?= $data['words']->withdraw_list->words->apply_30->value ?? "" ?>" required="">
                                         </div>
                                     </div>
 
@@ -462,7 +459,7 @@
                                             页面标题
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][title][value]" value="申请提现" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][title][value]" value="<?= $data['words']->withdraw_apply->title->value ?? "申请提现" ?>" required="">
                                             <small>
                                                 默认：申请提现</small>
                                         </div>
@@ -472,7 +469,7 @@
                                             可提现佣金
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][capital][value]" value="可提现佣金" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][capital][value]" value="<?= $data['words']->withdraw_apply->words->capital->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -480,7 +477,7 @@
                                             提现金额
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][money][value]" value="提现金额" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][money][value]" value="<?= $data['words']->withdraw_apply->words->money->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -488,7 +485,7 @@
                                             请输入要提取的金额
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][money_placeholder][value]" value="请输入要提取的金额" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][money_placeholder][value]" value="<?= $data['words']->withdraw_apply->words->money_placeholder->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -496,7 +493,7 @@
                                             最低提现佣金
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][min_money][value]" value="最低提现佣金" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][min_money][value]" value="<?= $data['words']->withdraw_apply->words->min_money->value ?? "" ?>" required="">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
@@ -504,7 +501,7 @@
                                             提交申请
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][submit][value]" value="提交申请" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][withdraw_apply][words][submit][value]" value="<?= $data['words']->withdraw_apply->words->submit->value ?? "" ?>" required="">
                                         </div>
                                     </div>
 
@@ -516,7 +513,7 @@
                                             页面标题
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[words][qrcode][title][value]" value="推广二维码" required="">
+                                            <input type="text" class="tpl-form-input" name="setting[words][qrcode][title][value]" value="<?= $data['words']->qrcode->title->value ?? "推广二维码" ?>" required="">
                                             <small>
                                                 默认：推广二维码</small>
                                         </div>
@@ -527,7 +524,7 @@
                                     <div class="am-form-group">
                                         <label class="am-u-sm-3 am-u-lg-2 am-form-label form-require">分销商申请协议 </label>
                                         <div class="am-u-sm-9 am-u-end">
-                                    <textarea class="" rows="6" placeholder="请输入分销商申请协议" name="setting[license][license]"></textarea>
+                                    <textarea class="" rows="6" placeholder="请输入分销商申请协议" name="setting[license][license]"><?= $data['license']->license ?? "" ?></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -542,14 +539,14 @@
                                                         <i class="am-icon-cloud-upload"></i> 选择图片
                                                     </button>
                                                     <div class="uploader-list am-cf">
-                                                                                                                    <div class="file-item">
-                                                                <a href="assets/store/img/dealer-bg.png" title="点击查看大图" target="_blank">
-                                                                    <img src="assets/store/img/dealer-bg.png">
-                                                                </a>
-                                                                <input type="hidden" name="setting[background][index]" value="https://demo.yiovo.com/assets/api/dealer-bg.png">
-                                                                <i class="iconfont icon-shanchu file-item-delete"></i>
-                                                            </div>
-                                                                                                            </div>
+                                                        <div class="file-item">
+                                                            <a href="assets/store/img/dealer-bg.png" title="点击查看大图" target="_blank">
+                                                                <img src="assets/store/img/dealer-bg.png">
+                                                            </a>
+                                                            <input type="hidden" name="setting[background][index]" value="<?= $data['background']->index ?? "" ?>">
+                                                            <i class="iconfont icon-shanchu file-item-delete"></i>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="help-block">
                                                     <small>尺寸：宽750像素 高度不限</small>
@@ -566,14 +563,14 @@
                                                         <i class="am-icon-cloud-upload"></i> 选择图片
                                                     </button>
                                                     <div class="uploader-list am-cf">
-                                                                                                                    <div class="file-item">
-                                                                <a href="assets/store/img/dealer-bg.png" title="点击查看大图" target="_blank">
-                                                                    <img src="assets/store/img/dealer-bg.png">
-                                                                </a>
-                                                                <input type="hidden" name="setting[background][apply]" value="https://demo.yiovo.com/assets/api/dealer-bg.png">
-                                                                <i class="iconfont icon-shanchu file-item-delete"></i>
-                                                            </div>
-                                                                                                            </div>
+                                                        <div class="file-item">
+                                                            <a href="assets/store/img/dealer-bg.png" title="点击查看大图" target="_blank">
+                                                                <img src="assets/store/img/dealer-bg.png">
+                                                            </a>
+                                                            <input type="hidden" name="setting[background][apply]" value="<?= $data['background']->apply ?? "" ?>">
+                                                            <i class="iconfont icon-shanchu file-item-delete"></i>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="help-block">
                                                     <small>尺寸：宽750像素 高度不限</small>
@@ -590,14 +587,14 @@
                                                         <i class="am-icon-cloud-upload"></i> 选择图片
                                                     </button>
                                                     <div class="uploader-list am-cf">
-                                                                                                                    <div class="file-item">
-                                                                <a href="assets/store/img/dealer-bg.png" title="点击查看大图" target="_blank">
-                                                                    <img src="assets/store/img/dealer-bg.png">
-                                                                </a>
-                                                                <input type="hidden" name="setting[background][withdraw_apply]" value="https://demo.yiovo.com/assets/api/dealer-bg.png">
-                                                                <i class="iconfont icon-shanchu file-item-delete"></i>
-                                                            </div>
-                                                                                                            </div>
+                                                        <div class="file-item">
+                                                            <a href="assets/store/img/dealer-bg.png" title="点击查看大图" target="_blank">
+                                                                <img src="assets/store/img/dealer-bg.png">
+                                                            </a>
+                                                            <input type="hidden" name="setting[background][withdraw_apply]" value="<?= $data['background']->withdraw_apply ?? "" ?>">
+                                                            <i class="iconfont icon-shanchu file-item-delete"></i>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="help-block">
                                                     <small>尺寸：宽750像素 高度不限</small>
@@ -612,10 +609,11 @@
                                             分销商入驻审核通知
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[template_msg][apply_tpl]" placeholder="请填写模板消息ID" value="">
+                                            <input type="text" class="tpl-form-input" name="setting[template_msg][apply_tpl]" placeholder="请填写模板消息ID"
+                                                   value="<?= $data['template_msg']->apply_tpl ?? "" ?>">
                                             <small>模板编号AT0674，关键词 (申请时间、审核状态、审核时间、备注信息)</small>
                                             <small class="am-margin-left-xs">
-                                                <a href="https://demo.yiovo.com/index.php?s=/store/setting.help/tplmsg" target="_blank">如何获取模板消息ID？</a>
+                                                <a href="<?= url('store/setting.help/tplmsg') ?>" target="_blank">如何获取模板消息ID？</a>
                                             </small>
                                         </div>
                                     </div>
@@ -624,10 +622,11 @@
                                             提现状态通知
                                         </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="setting[template_msg][withdraw_tpl]" placeholder="请填写模板消息ID" value="">
+                                            <input type="text" class="tpl-form-input" name="setting[template_msg][withdraw_tpl]" placeholder="请填写模板消息ID"
+                                                   value="<?= $data['template_msg']->withdraw_tpl ?? "" ?>">
                                             <small>模板编号AT0324，关键词 (提现时间、提现方式、提现金额、提现状态、备注)</small>
                                             <small class="am-margin-left-xs">
-                                                <a href="https://demo.yiovo.com/index.php?s=/store/setting.help/tplmsg" target="_blank">如何获取模板消息ID？</a>
+                                                <a href="<?= url('store/setting.help/tplmsg') ?>" target="_blank">如何获取模板消息ID？</a>
                                             </small>
                                         </div>
                                     </div>
