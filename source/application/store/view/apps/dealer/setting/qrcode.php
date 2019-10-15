@@ -37,28 +37,46 @@
                                     </div>
                                 </div>
                                 <div class="am-form-group"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 头像宽度 </label>
-                                    <div class="am-u-sm-9 am-u-md-8"><input type="number" min="30" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$"></div>
+                                    <div class="am-u-sm-9 am-u-md-8">
+                                        <input type="number" min="30" name="qrcode[header][width]" value="<?=  isset($data->header->with) ? $data->header->with:""?>" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                    </div>
                                 </div>
                                 <div class="am-form-group"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 头像样式 </label>
                                     <div class="am-u-sm-9 am-u-md-8">
                                         <label class="am-radio-inline">
-                                            <input type="radio" value="square" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 正方形</label> <label class="am-radio-inline"><input type="radio" value="circle" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 圆形</label>
+                                            <input type="radio" value="square" name="qrcode[header][style]" value="<?= isset($data->header->style) ? ($data->header->style == "square" ?"checked": "") :"" ?>" data-am-ucheck="" class="am-ucheck-radio">
+                                            <span class="am-ucheck-icons">
+                                                <i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 正方形</label>
+                                        <label class="am-radio-inline">
+                                            <input type="radio" value="circle" name="qrcode[header][style]"  value="<?= isset($data->header->style) ? ($data->header->style == "circle" ?"checked": "") :"" ?>"  data-am-ucheck="" class="am-ucheck-radio">
+                                            <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 圆形</label>
                                     </div>
                                 </div>
                                 <div class="am-form-group am-padding-top">
                                     <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 昵称字体大小 </label>
                                     <div class="am-u-sm-9 am-u-md-8">
-                                        <input type="number" min="12" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                        <input type="number" min="12" name="qrcode[nickname][font][size]" required="required"  value="<?= isset($data->nickname->font->size)? ($data->nickname->font->size ?? "") :"" ?>"  class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 昵称字体颜色 </label>
                                     <div class="am-u-sm-9 am-u-md-8">
-                                        <input type="color" class="tpl-form-input">
+                                        <input type="color" class="tpl-form-input" name="qrcode[nickname][font][color]" value="<?= isset($data->nickname->font->color)? ($data->nickname->font->color ?? "") :"" ?>">
                                     </div>
                                 </div>
                                 <div class="am-form-group am-padding-top">
-                                    <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码宽度 </label> <div class="am-u-sm-9 am-u-md-8"><input type="number" min="50" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$"></div></div> <div class="am-form-group"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码样式 </label> <div class="am-u-sm-9 am-u-md-8"><label class="am-radio-inline"><input type="radio" value="square" data-am-ucheck="" checked="checked" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 正方形</label> <label class="am-radio-inline"><input type="radio" value="circle" data-am-ucheck="" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 圆形</label>
+                                    <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码宽度 </label> <div class="am-u-sm-9 am-u-md-8">
+                                        <input type="number" min="50" required="required" name="qrcode[app][width]" value="<?= isset($data->app->width)? ($data->app->width ?? "") :"" ?>" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码样式 </label> <div class="am-u-sm-9 am-u-md-8">
+                                        <label class="am-radio-inline">
+                                            <input type="radio" value="square" data-am-ucheck="" name="qrcode[app][style]"  value="<?= isset($data->app->style) ? ($data->app->style == "circle" ?"checked": "") :"" ?>" class="am-ucheck-radio">
+                                            <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 正方形</label>
+                                        <label class="am-radio-inline">
+                                            <input type="radio" value="circle" name="qrcode[app][style]" data-am-ucheck=""  value="<?= isset($data->app->style) ? ($data->app->style == "circle" ?"checked": "") :"" ?>"  class="am-ucheck-radio">
+                                            <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 圆形</label>
                                     </div>
                                 </div>
                                 <div class="am-form-group">
