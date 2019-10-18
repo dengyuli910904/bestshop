@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://www.17sucai.com/preview/353174/2015-06-10/%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/common1.css" media="all">
+
+    <!--首页幻灯js-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/swipe.js"></script>
+    <!--首页幻灯js end-->
+</head>
+<body>
+<div class="loading_page" style="display: none;"></div>
+<div class="banner openwebview">
+
+    <div style="-webkit-transform:translate3d(0,0,0);">
+        <div id="banner_box" class="box_swipe" style="visibility: visible;">
+            <ul style="list-style: none; transition-duration: 500ms; width: 1280px; transform: translate3d(0px, 0px, 0px);">
+                <li style="width: 640px; display: table-cell; vertical-align: top;">
+                    <a onclick="return false;">
+                        <img src="images/banner.jpg" alt="2" style="width:100%;">
+                    </a>
+                </li>
+                <li style="width: 640px; display: table-cell; vertical-align: top;">
+                    <a onclick="return false;">
+                        <img src="images/200.jpg" alt="2" style="width:100%;">
+                    </a>
+                </li>
+            </ul>
+            <ol>
+
+                <li class="on"></li>
+                <li class=""></li>
+            </ol>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            new Swipe(document.getElementById('banner_box'), {
+                speed:500,
+                auto:3000,
+                callback: function(){
+                    var lis = $(this.element).next("ol").children();
+                    lis.removeClass("on").eq(this.index).addClass("on");
+                }
+            });
+        });
+    </script>
+
+</div>
+
+<div class="product">
+    <div class="item-image" style="padding: 0px;">
+        <img src="images/p_new_title.png"></div>
+    <ul class="item">
+        <li style="padding: 0px;">
+            <div class="item-image">
+                <img src="images/product_001.png">
+            </div>
+        </li>
+        <li style="padding: 0px;">
+            <div class="item-image">
+                <img src="images/product_001.png">
+            </div>
+        </li>
+        <li style="padding: 0px;">
+            <div class="item-image">
+                <img src="images/product_001.png">
+            </div>
+        </li>
+        <li style="padding: 0px;">
+            <div class="item-image">
+                <img src="images/product_001.png">
+            </div>
+        </li>
+        <li style="padding: 0px;">
+            <div class="item-image">
+                <img src="images/product_001.png">
+            </div>
+        </li>
+        <li style="padding: 0px;">
+            <div class="item-image">
+                <img src="images/product_001.png">
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div style="display: block;" class="footer_bar openwebview">
+    <ul class="warp clearfix">
+        <li><!--<li class="on">-->
+            <a href="#" page_click_button="index">
+                <i class="new_icon"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="category.html" data-url="me" page_click_button="me" class="to_personalcenter personalcenternum">
+                <i class="new_icon"><strong style="display: none;"></strong></i>
+                <span>分类</span>
+            </a>
+        </li>
+        <li class="on">
+            <a href="me.html" data-url="me" page_click_button="me" class="to_personalcenter personalcenternum">
+                <i class="new_icon"><strong style="display: none;"></strong></i>
+                <span>我的</span>
+            </a>
+        </li>
+        <li>
+            <a href="cart.html" data-url="cart" page_click_button="cart" class="new_car_center">
+                <i class="new_icon"><strong style="">2</strong></i>
+                <span>购物车</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
