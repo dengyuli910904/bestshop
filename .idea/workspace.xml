@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ce71a97-18bc-477f-b7bc-d4be9c878641" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/application/store/view/apps/bargain/active/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/bestshop-html/applications/bargain/bargain_create.html" afterPath="$PROJECT_DIR$/doc/bestshop-html/applications/bargain/bargain_create.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/bestshop-html/applications/bargain/bargainlist.html" afterPath="$PROJECT_DIR$/doc/bestshop-html/applications/bargain/bargainlist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/application/database.php" afterPath="$PROJECT_DIR$/source/application/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/application/store/controller/apps/bargain/active.php" afterPath="$PROJECT_DIR$/source/application/store/controller/apps/bargain/active.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/application/store/controller/apps/dealer/Setting.php" afterPath="$PROJECT_DIR$/source/application/store/controller/apps/dealer/Setting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/application/store/extra/menus.php" afterPath="$PROJECT_DIR$/source/application/store/extra/menus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/application/store/model/SharingActive.php" afterPath="$PROJECT_DIR$/source/application/store/model/SharingActive.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/application/store/view/apps/bargain/active/index.php" afterPath="$PROJECT_DIR$/source/application/store/view/apps/bargain/active/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/application/store/view/apps/dealer/setting/qrcode.php" afterPath="$PROJECT_DIR$/source/application/store/view/apps/dealer/setting/qrcode.php" />
-    </list>
+    <list default="true" id="8ce71a97-18bc-477f-b7bc-d4be9c878641" name="Default" comment="" />
     <ignored path="bestshop.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -107,8 +95,8 @@
       <file leaf-file-name="add.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/application/store/view/apps/bargain/active/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8141593">
-              <caret line="185" column="13" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.20353982">
+              <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -1444,8 +1432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/application/store/view/apps/bargain/active/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8141593">
-          <caret line="185" column="13" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.20353982">
+          <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
           <folding />
         </state>
       </provider>
