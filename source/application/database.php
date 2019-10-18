@@ -2,11 +2,11 @@
 
 // 数据库配置
 $config = [
-    'host' => '192.168.10.10',//'192.168.10.10',
+    'host' => '127.0.0.1',//'192.168.10.10',
     'database' => 'bestshop',
-    'username' => 'homestead',// 'homestead',
-    'password' => 'secret',// 'secret',
-    'port' => '3306',
+    'username' => 'hns',// 'homestead',
+    'password' => '123456',// 'secret',
+    'port' => '8889',
     'charset' => 'utf8',
 ];
 
