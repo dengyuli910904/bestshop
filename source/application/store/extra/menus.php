@@ -334,7 +334,7 @@ return [
         'submenu' => [
             [
                 'name' => '分销中心',
-                'active' => true,
+                'active' => false,
                 'submenu' => [
                     [
                         'name' => '分销申请',
@@ -364,7 +364,7 @@ return [
             ],
             [
                 'name' => '拼团管理',
-                'active' => true,
+                'active' => false,
                 'submenu' => [
                     [
                         'name' => '商品分类',
@@ -398,7 +398,7 @@ return [
             ],
             [
                 'name' => '砍价活动',
-                'active' => true,
+                'active' => false,
                 'submenu' => [
                     [
                         'name' => '活动列表',
@@ -416,7 +416,7 @@ return [
             ],
             [
                 'name' => '好物圈',
-                'active' => true,
+                'active' => false,
                 'submenu' => [
                     [
                         'name' => '商品收藏',

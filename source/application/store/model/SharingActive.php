@@ -1,6 +1,6 @@
 <?php
 
-app\store\model;
+namespace app\store\model;
 
 use app\common\model\SharingActive as activeModel;
 

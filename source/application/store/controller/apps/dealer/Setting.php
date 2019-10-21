@@ -38,7 +38,7 @@ class Setting extends Controller
         $model   = new SettingModel();
         $request = Request::instance();
         if ($request->method() === 'POST') {
-//            var_dump($request->request());
+//            var_dump($request->request()['qrcode']);
             $data['qrcode'] = json_encode($request->request()['qrcode']);
             $result         = $model->saveSetting($data);
             return $this->renderSuccess('添加成功', url('apps.dealer.setting/qrcode'));

@@ -14,10 +14,9 @@
                         </div>
                     </div>
                     <div id="app" class="poster-pannel am-cf am-padding-bottom-xl">
-                        <div></div>
                         <div class="pannel__left am-fl">
                             <div id="j-preview" class="poster-preview">
-                                <img id="preview-backdrop" src="{{ backdrop.src}}" alt="" class="backdrop">
+                                <img id="preview-backdrop" v-bind:src="backdrop.src" alt="" class="backdrop">
                                 <div id="j-qrcode" class="drag pre-qrcode circle" style="width: 100px; height: 100px; top: 128px; left: 136px;">
                                     <img src="../../images/qrcode.png" alt="">
                                 </div>
@@ -30,9 +29,13 @@
                         </div>
                         <div class="pannel__right am-fl">
                             <form id="my-form" method="post" class="am-form tpl-form-line-form" novalidate="novalidate">
-                                <div class="am-form-group"><label class="am-u-sm-3 am-u-lg-4 am-form-label form-require">海报背景图 </label>
-                                    <div class="am-u-sm-8 am-u-end"><div class="am-form-file"><div class="am-form-file">
-                                                <button type="button" class="j-image upload-file am-btn am-btn-secondary am-radius"><i class="am-icon-cloud-upload"></i> 选择图片</button>
+                                <div class="am-form-group">
+                                    <label class="am-u-sm-3 am-u-lg-4 am-form-label form-require">海报背景图 </label>
+                                    <div class="am-u-sm-8 am-u-end">
+                                        <div class="am-form-file">
+                                            <div class="am-form-file">
+                                                <button type="button" class="j-image upload-file am-btn am-btn-secondary am-radius">
+                                                    <i class="am-icon-cloud-upload"></i> 选择图片</button>
                                             </div>
                                             <div class="help-block"><small>尺寸：宽750像素 高大于(等于)1200像素</small></div>
                                         </div>
@@ -40,44 +43,45 @@
                                 </div>
                                 <div class="am-form-group"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 头像宽度 </label>
                                     <div class="am-u-sm-9 am-u-md-8">
-                                        <input type="number" min="30" name="qrcode[header][width]" value="<?=  isset($data->header->with) ? $data->header->with:""?>" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                        <input type="number" min="30" v-bind:value="avatar.width" required="required" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                     </div>
                                 </div>
                                 <div class="am-form-group"><label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 头像样式 </label>
                                     <div class="am-u-sm-9 am-u-md-8">
                                         <label class="am-radio-inline">
-                                            <input type="radio" value="square" name="qrcode[header][style]" value="<?= isset($data->header->style) ? ($data->header->style == "square" ?"checked": "") :"" ?>" data-am-ucheck="" class="am-ucheck-radio">
+                                            <input type="radio" value="square"  data-am-ucheck="" class="am-ucheck-radio">
                                             <span class="am-ucheck-icons">
                                                 <i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 正方形</label>
                                         <label class="am-radio-inline">
-                                            <input type="radio" value="circle" name="qrcode[header][style]"  value="<?= isset($data->header->style) ? ($data->header->style == "circle" ?"checked": "") :"" ?>"  data-am-ucheck="" class="am-ucheck-radio">
+                                            <input type="radio" value="circle" checked  data-am-ucheck="" class="am-ucheck-radio">
                                             <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 圆形</label>
                                     </div>
                                 </div>
                                 <div class="am-form-group am-padding-top">
                                     <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 昵称字体大小 </label>
                                     <div class="am-u-sm-9 am-u-md-8">
-                                        <input type="number" min="12" name="qrcode[nickname][font][size]" required="required"  value="<?= isset($data->nickname->font->size)? ($data->nickname->font->size ?? "") :"" ?>"  class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                        <input type="number" min="12" v-bind:value="nickName.fontSize" required="required"   class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 昵称字体颜色 </label>
                                     <div class="am-u-sm-9 am-u-md-8">
-                                        <input type="color" class="tpl-form-input" name="qrcode[nickname][font][color]" value="<?= isset($data->nickname->font->color)? ($data->nickname->font->color ?? "") :"" ?>">
+                                        <input type="color" class="tpl-form-input" v-bind:value="nickName.color" >
                                     </div>
                                 </div>
                                 <div class="am-form-group am-padding-top">
                                     <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码宽度 </label> <div class="am-u-sm-9 am-u-md-8">
-                                        <input type="number" min="50" required="required" name="qrcode[app][width]" value="<?= isset($data->app->width)? ($data->app->width ?? "") :"" ?>" class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
+                                        <input type="number" min="50" required="required" v-bind:value="qrcode.width"  class="tpl-form-input" pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
-                                    <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码样式 </label> <div class="am-u-sm-9 am-u-md-8">
+                                    <label class="am-u-sm-3 am-u-md-4 am-form-label form-require"> 小程序码样式 </label>
+                                    <div class="am-u-sm-9 am-u-md-8">
                                         <label class="am-radio-inline">
-                                            <input type="radio" value="square" data-am-ucheck="" name="qrcode[app][style]"  value="<?= isset($data->app->style) ? ($data->app->style == "circle" ?"checked": "") :"" ?>" class="am-ucheck-radio">
+                                            <input type="radio" value="square" data-am-ucheck="" name="qrcode[app][style]"  class="am-ucheck-radio">
                                             <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 正方形</label>
                                         <label class="am-radio-inline">
-                                            <input type="radio" value="circle" name="qrcode[app][style]" data-am-ucheck=""  value="<?= isset($data->app->style) ? ($data->app->style == "circle" ?"checked": "") :"" ?>"  class="am-ucheck-radio">
+                                            <input type="radio" value="circle" name="qrcode[app][style]" data-am-ucheck=""   class="am-ucheck-radio">
                                             <span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 圆形</label>
                                     </div>
                                 </div>
@@ -234,17 +238,12 @@
     $(function () {
         var appVue = new Vue({
             el: '#app',
-            data: {
-                backdrop:{
-                    src: "https:\/\/demo.yiovo.com\/assets\/store\/img\/dealer\/backdrop.png"},
-                nickName:{
-                    fontSize:14,
-                    color:"#000000",
-                    left:150,
-                    top:99},
-                avatar:{width:70,"style":"circle","left":150,"top":18},
-                qrcode:{"width":100,"style":"circle","left":136,"top":128}
-                },
+            data: <?= json_encode($data) ?>,
+//            {
+//                "backdrop":{"src": "https:\/\/demo.yiovo.com\/assets\/store\/img\/dealer\/backdrop.png"},
+//                "nickName":{"fontSize":14,"color":"#000000","left":150,"top":99},
+//                "avatar":{"width":70,"style":"circle","left":150,"top":18},
+//                "qrcode":{"width":100,"style":"circle","left":136,"top":128}},
             created: function () {
                 /**
                  * 注册拖拽事件
