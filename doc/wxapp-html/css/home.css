@@ -101,6 +101,23 @@ display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;height:3
  text-align: center;
 }
 
+.cart .item{
+ width: 100%;
+ float: left;
+ background: #fff;
+ padding: 10px 0px;
+}
+.cart .item input.radiobox{
+ padding: 5px;
+ margin: auto 3%;
+}
+.cart .item .product-img{
+ width: 20%;
+}
+.cart .item .product-intro {
+  width: 50%;
+}
+
 
 @media (min-width:360px){
 .prefecture a i{font-size:20px;}

@@ -19,10 +19,16 @@ class Page extends Controller
      */
     public function home()
     {
+        $model = new WxappPageModel();
+        $list = $model->getList();
+        return $this->fetch('home', compact('list'));
+    }
+
+    public function add(){
         $model = WxappPageModel::detail();
         if (!$this->request->isAjax()) {
             $jsonData = $model['page_data']['json'];
-            return $this->fetch('home', compact('jsonData'));
+            return $this->fetch('add', compact('jsonData'));
         }
         $data = $this->postData('data');
         if (!$model->edit($data)) {

@@ -42,6 +42,9 @@ class WxappPage extends BaseModel
         return self::get([]);
     }
 
+    public function getList($wxapp_id = null){
+        return $this->all();
+    }
     /**
      * 新增小程序首页diy默认设置
      * @param $wxapp_id

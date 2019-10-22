@@ -8,5 +8,19 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/source/vendor/composer" />
+          <root url="file://$MODULE_DIR$/source/vendor/qiniu/php-sdk" />
+          <root url="file://$MODULE_DIR$/source/vendor/topthink/think-installer" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/source/vendor/composer" />
+          <root url="file://$MODULE_DIR$/source/vendor/qiniu/php-sdk" />
+          <root url="file://$MODULE_DIR$/source/vendor/topthink/think-installer" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
