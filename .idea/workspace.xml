@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ce71a97-18bc-477f-b7bc-d4be9c878641" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/bestshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bestshop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php" afterDir="false" />
-    </list>
+    <list default="true" id="8ce71a97-18bc-477f-b7bc-d4be9c878641" name="Default" comment="" />
     <ignored path="bestshop.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -69,8 +66,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1141">
-              <caret line="527" lean-forward="true" selection-start-line="527" selection-end-line="527" />
+            <state relative-caret-position="590">
+              <caret line="498" column="21" lean-forward="true" selection-start-line="498" selection-start-column="21" selection-end-line="498" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -320,15 +317,15 @@
       <option name="presentableId" value="Default" />
       <updated>1570765934855</updated>
       <workItem from="1571112030924" duration="6035000" />
-      <workItem from="1571740470491" duration="29000" />
+      <workItem from="1571740470491" duration="849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6064000" />
+    <option name="totallyTimeSpent" value="6884000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2552" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="2552" y="-8" width="2576" height="1416" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.121224165" />
@@ -681,8 +678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1141">
-          <caret line="527" lean-forward="true" selection-start-line="527" selection-end-line="527" />
+        <state relative-caret-position="590">
+          <caret line="498" column="21" lean-forward="true" selection-start-line="498" selection-start-column="21" selection-end-line="498" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
