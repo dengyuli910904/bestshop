@@ -24,6 +24,14 @@ class Page extends Controller
         return $this->fetch('home', compact('list'));
     }
 
+    public function create(){
+        $model = WxappPageModel::detail();
+        if (!$this->request->isAjax()) {
+            $jsonData = $model['page_data']['json'];
+            return $this->fetch('create', compact('jsonData'));
+        }
+//        return $this->fetch('create');
+    }
     public function add(){
         $model = WxappPageModel::detail();
         if (!$this->request->isAjax()) {
