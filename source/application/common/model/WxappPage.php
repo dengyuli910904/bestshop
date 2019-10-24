@@ -37,9 +37,13 @@ class WxappPage extends BaseModel
      * @return null|static
      * @throws \think\exception\DbException
      */
-    public static function detail()
+    public static function detail($pageId = null)
     {
-        return self::get([]);
+        $where = [];
+        if(!empty($pageId)){
+            $where['page_id'] = $pageId;
+        }
+        return self::get($where);
     }
 
     public function getList($wxapp_id = null){

@@ -33,7 +33,7 @@ class Page extends Controller
 //        return $this->fetch('create');
     }
     public function add(){
-        $model = WxappPageModel::detail();
+        $model = WxappPageModel::detail(10002);
         if (!$this->request->isAjax()) {
             $jsonData = $model['page_data']['json'];
             return $this->fetch('add', compact('jsonData'));
