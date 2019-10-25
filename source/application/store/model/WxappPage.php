@@ -24,4 +24,9 @@ class WxappPage extends WxappPageModel
         return $this->save(compact('page_data')) !== false;
     }
 
+    public function add($page_data){
+        Wxapp::deleteCache();
+        return $this->insert(compact('page_data')) !== false;
+    }
+
 }

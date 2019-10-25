@@ -32,17 +32,35 @@ class Page extends Controller
         }
 //        return $this->fetch('create');
     }
+    public function edit()
+    {
+        if ($this->request->has('pageId')) {
+            $pageId = $this->request->request('pageId');
+            $model  = WxappPageModel::detail($pageId);
+            if (!$this->request->isAjax()) {
+                $jsonData = $model['page_data']['json'];
+                return $this->fetch('add', compact('jsonData'));
+            }
+            $data = $this->postData('data');
+            if (!$model->edit($data)) {
+                return $this->renderError('更新失败');
+            }
+            return $this->renderSuccess('更新成功');
+        }
+    }
+
     public function add(){
-        $model = WxappPageModel::detail(10002);
         if (!$this->request->isAjax()) {
-            $jsonData = $model['page_data']['json'];
-            return $this->fetch('add', compact('jsonData'));
+            return $this->fetch('add');
         }
+        $model = new WxappPageModel();
         $data = $this->postData('data');
-        if (!$model->edit($data)) {
-            return $this->renderError('更新失败');
+        var_dump($data);
+        exit;
+        if (!$model->add($data)) {
+            return $this->renderError('添加失败');
         }
-        return $this->renderSuccess('更新成功');
+        return $this->renderSuccess('添加成功');
     }
 
     /**

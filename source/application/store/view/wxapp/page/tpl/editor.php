@@ -1163,4 +1163,46 @@
 </script>
 <!--articleCatgory-->
 <script id="tpl_editor_articleCatgory" type="text/template">
+</script>
+
+<script id="tpl_editor_page" type="text/template">
+    <div id="tpl_editor_page"><div class="editor-title"><span>页面设置</span></div>
+        <form class="am-form tpl-form-line-form"><div class="am-form-group">
+                <label class="am-u-sm-3 am-form-label am-text-xs">页面名称 </label>
+                <div class="am-u-sm-8 am-u-end">
+                    <input type="text" class="tpl-form-input">
+                    <div class="help-block am-margin-top-xs"><small>页面名称仅用于后台查找</small></div>
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label class="am-u-sm-3 am-form-label am-text-xs">页面标题 </label>
+                <div class="am-u-sm-8 am-u-end"><input type="text" class="tpl-form-input">
+                    <div class="help-block am-margin-top-xs"><small>小程序端顶部显示的标题</small></div>
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label class="am-u-sm-3 am-form-label am-text-xs">分享标题 </label>
+                <div class="am-u-sm-8 am-u-end">
+                    <input type="text" class="tpl-form-input">
+                    <div class="help-block am-margin-top-xs"><small>小程序端转发时显示的标题</small></div>
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label class="am-u-sm-3 am-form-label am-text-xs">标题栏文字 </label>
+                <div class="am-u-sm-8 am-u-end">
+                    <label class="am-radio-inline"><input type="radio" value="black" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>黑色</label>
+                    <label class="am-radio-inline"><input type="radio" value="white" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>白色</label>
+                </div>
+            </div>
+            <div class="am-form-group">
+                <label class="am-u-sm-3 am-form-label am-text-xs">标题栏背景 </label>
+                <div class="am-u-sm-8 am-u-end">
+                    <input type="color"> <button type="button" class="btn-resetColor am-btn am-btn-xs">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</script>
+
+
 

@@ -17,33 +17,35 @@
                                 <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-tupianlunbo"></i></p> <p>图片轮播</p></nav>
                                 <nav class="special" data-type="imageSingle"><p class="item-icon"><i class="iconfont icon-tupian1"></i></p> <p>单图组</p></nav>
                                 <nav class="special" data-type="window"><p class="item-icon"><i class="iconfont icon-newbilayout"></i></p> <p>图片橱窗</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-shipin7"></i></p> <p>视频组</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-zixun"></i></p> <p>文章组</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-toutiao"></i></p> <p>头条快报</p></nav>
+                                <nav class="special" data-type="video"><p class="item-icon"><i class="iconfont icon-shipin7"></i></p> <p>视频组</p></nav>
+                                <nav class="special" data-type="article"><p class="item-icon"><i class="iconfont icon-zixun"></i></p> <p>文章组</p></nav>
+                                <nav class="special" data-type="special"><p class="item-icon"><i class="iconfont icon-toutiao"></i></p> <p>头条快报</p></nav>
                             </div>
                             <div class="title">商城组件</div>
                             <div class="navs-components am-cf">
                                 <nav class="special" data-type="search"><p class="item-icon"><i class="iconfont icon-wxbsousuotuiguang"></i></p> <p>搜索框</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-gonggao"></i></p> <p>公告组</p></nav>
-                                <nav class="special" data-type="guide"><p class="item-icon"><i class="iconfont icon-daohang"></i></p> <p>导航组</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-shangpin5"></i></p> <p>商品组</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-youhuiquan2"></i></p> <p>优惠券组</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-shangpin5"></i></p> <p>拼团商品</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-kanjia"></i></p> <p>砍价商品</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-mendian"></i></p> <p>线下门店</p></nav>
+                                <nav class="special" data-type="notice"><p class="item-icon"><i class="iconfont icon-gonggao"></i></p> <p>公告组</p></nav>
+                                <nav class="special" data-type="navBar"><p class="item-icon"><i class="iconfont icon-daohang"></i></p> <p>导航组</p></nav>
+                                <nav class="special" data-type="goods"><p class="item-icon"><i class="iconfont icon-shangpin5"></i></p> <p>商品组</p></nav>
+                                <nav class="special" data-type="coupon"><p class="item-icon"><i class="iconfont icon-youhuiquan2"></i></p> <p>优惠券组</p></nav>
+                                <nav class="special" data-type="sharingGoods"><p class="item-icon"><i class="iconfont icon-shangpin5"></i></p> <p>拼团商品</p></nav>
+                                <nav class="special" data-type="bargainGoods"><p class="item-icon"><i class="iconfont icon-kanjia"></i></p> <p>砍价商品</p></nav>
+                                <nav class="special" data-type="shop"><p class="item-icon"><i class="iconfont icon-mendian"></i></p> <p>线下门店</p></nav>
                             </div>
                             <div class="title">工具组件</div>
                             <div class="navs-components am-cf">
                                 <nav class="special" data-type="service"><p class="item-icon"><i class="iconfont icon-kefu"></i></p> <p>在线客服</p></nav>
                                 <nav class="special" data-type="richText"><p class="item-icon"><i class="iconfont icon-wenbenbianji"></i></p> <p>富文本</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-kongbai"></i></p> <p>辅助空白</p></nav>
-                                <nav class="special" data-type="banner"><p class="item-icon"><i class="iconfont icon-fengexian1"></i></p> <p>辅助线</p></nav>
+                                <nav class="special" data-type="blank"><p class="item-icon"><i class="iconfont icon-kongbai"></i></p> <p>辅助空白</p></nav>
+                                <nav class="special" data-type="guide"><p class="item-icon"><i class="iconfont icon-fengexian1"></i></p> <p>辅助线</p></nav>
                             </div>
                         </div>
                     </div>
-                    <div class="action"><button type="button" class="am-btn am-btn-xs am-btn-secondary">
+                    <div class="action">
+                        <button type="button" id="submit" class="am-btn am-btn-xs am-btn-secondary">
                             保存页面
-                        </button></div>
+                        </button>
+                    </div>
                 </div>
                 <div class="diy-phone">
                     <div id="diy-page" class="phone-top optional" style="background: url(&quot;assets/store/img/diy/phone-top-black.png&quot;) center center / contain no-repeat rgb(255, 255, 255);">
@@ -52,7 +54,12 @@
                         <div class="dragArea"></div>
                     </div>
                 </div>
-                <div id="diy-editor" class="diy-editor form-horizontal" style="visibility: hidden;"><!----> <!----></div>
+                <div id="diy-editor" class="diy-editor form-horizontal" style="visibility: visible;">
+<!--                    style="visibility: hidden;-->
+                    <div class="inner">
+
+                    </div>
+                </div>
             </div>
             <!-- 提示 -->
             <div class="tips am-margin-top-lg am-margin-bottom-sm">
@@ -6339,7 +6346,10 @@
            // $jsonData = {};
     //        // 渲染diy页面
     //        new diyPhone(jsonData);
-           new diyPhone(<?= $jsonData?>);
+           data = {
+               'items': {}
+           };
+           new diyPhone(data);
        });
 
     </script>

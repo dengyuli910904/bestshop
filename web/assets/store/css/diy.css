@@ -824,4 +824,8 @@
 .work-diy .diy-editor .form-item-add:hover {
   background: #f9f9f9; }
 
+.work-diy .diy-editor .form-items .item-image img{
+  width: 100%;
+}
+
 /*# sourceMappingURL=diy.css.map */

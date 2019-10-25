@@ -180,7 +180,6 @@
                      */
                     components: function () {
                         this.diyMenu.find('#components .special').click(function () {
-                            alert(" add components");
                             var type = $(this).data('type');
                             method.render.insertDiyItem(type);
                         });
@@ -419,7 +418,8 @@
                         id: diyItemId,
                         type: type
                     }, defaultData[type]);
-                    console.log("=== default_data", defaultData[type]);
+
+                    console.log("==新增==",diyData.items);
                     // 处理子元素集
                     if (item.hasOwnProperty('data')) {
                         var data = {};
@@ -445,6 +445,7 @@
                         , $form = $(template('tpl_editor_' + item.type, item));
                     // 注册所有事件
                     method.editor.event.register($form, diyData);
+                    console.log("-===-=-=-=-=-=",$form)
                     // 写入编辑器
                     $('#diy-editor').find('.inner').html($form);
                     // // 注册文件上传
