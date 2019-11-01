@@ -48,8 +48,9 @@
                     </div>
                 </div>
                 <div class="diy-phone">
-                    <div id="diy-page" class="phone-top optional" style="background: url(&quot;assets/store/img/diy/phone-top-black.png&quot;) center center / contain no-repeat rgb(255, 255, 255);">
-                        <h4 style="color: black;">页面标题</h4></div>
+                    <div id="diy-page" class="phone-top optional" style="background: url('assets/store/img/diy/phone-top-black.png') center center / contain no-repeat rgb(255, 255, 255);">
+<!--                        <h4 style="color: black;">页面标题</h4>-->
+                    </div>
                     <div id="phone-main" class="phone-main">
                         <div class="dragArea"></div>
                     </div>
@@ -6347,7 +6348,20 @@
     //        // 渲染diy页面
     //        new diyPhone(jsonData);
            data = {
-               'items': {}
+               'items': {},
+               "page": {
+                   "type": "page",
+                   "name": "page",
+                   "params": {
+                       "name": "page",
+                       "title": "页面标题",
+                       "share_title": "分享标题"
+                   },
+                   "style": {
+                       "titleTextColor": "black",
+                       "titleBackgroundColor": "#ffffff"
+                   }
+               }
            };
            new diyPhone(data);
        });

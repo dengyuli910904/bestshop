@@ -55,8 +55,6 @@ class Page extends Controller
         }
         $model = new WxappPageModel();
         $data = $this->postData('data');
-        var_dump($data);
-        exit;
         if (!$model->add($data)) {
             return $this->renderError('添加失败');
         }
@@ -71,5 +69,6 @@ class Page extends Controller
     {
         return $this->fetch('links');
     }
+
 
 }

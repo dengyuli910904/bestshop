@@ -127,12 +127,13 @@
 
 <!--editor: imageSingle-->
 <script id="tpl_editor_imageSingle" type="text/template">
-    <form class="am-form tpl-form-line-form"><div class="am-form-group">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
+        <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label am-text-xs">上下边距 </label>
-            <div class="am-u-sm-9 am-u-end"><input type="range" min="0" max="50" class="tpl-form-input">
+            <div class="am-u-sm-9 am-u-end">
+                <input type="range" min="0" max="50" class="tpl-form-input">
                 <div class="display-value"><span class="value">0</span>px (像素)
                 </div>
-
             </div>
 
         </div>
@@ -212,7 +213,7 @@
 <!--window-->
 <script id="tpl_editor_window" type="text/template">
 
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label am-text-xs">上下边距 </label>
             <div class="am-u-sm-9 am-u-end">
@@ -346,7 +347,7 @@
 
 <!--navBar-->
 <script id="tpl_editor_navBar" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div class="am-form-group">
             <label class="am-u-sm-4 am-form-label am-text-xs">背景颜色 </label>
             <div class="am-u-sm-8 am-u-end"><input type="color">
@@ -471,7 +472,7 @@
 
 <!--blank-->
 <script id="tpl_editor_blank" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div class="am-form-group">
             <label class="am-u-sm-4 am-form-label am-text-xs">背景颜色 </label>
             <div class="am-u-sm-8 am-u-end">
@@ -487,7 +488,7 @@
 </script>
 <!--guide-->
 <script id="tpl_editor_guide" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div class="am-form-group">
             <label class="am-u-sm-4 am-form-label am-text-xs">背景颜色 </label>
             <div class="am-u-sm-8 am-u-end">
@@ -534,7 +535,7 @@
 </script>
 <!--viedo-->
 <script id="tpl_editor_video" type="text/template">
-   <form class="am-form tpl-form-line-form"><div class="am-form-group">
+   <form class="am-form tpl-form-line-form" data-itemid="{{ id }}"><div class="am-form-group">
            <label class="am-u-sm-3 am-form-label am-text-xs">上下边距 </label>
            <div class="am-u-sm-8 am-u-end">
                <input type="range" min="0" max="50" class="tpl-form-input">
@@ -567,7 +568,7 @@
 
 <!--article-->
 <script id="tpl_editor_article" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label am-text-xs">文章分类 </label>
             <div class="am-u-sm-8 am-u-end">
@@ -588,7 +589,7 @@
 </script>
 <!--special-->
 <script id="tpl_editor_special" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label am-text-xs">文章分类 </label>
             <div class="am-u-sm-8 am-u-end">
@@ -626,7 +627,7 @@
 </script>
 <!--notice-->
 <script id="tpl_editor_notice" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label am-text-xs">上下边距 </label>
             <div class="am-u-sm-8 am-u-end"><input type="range" min="0" max="50" class="tpl-form-input"> <div class="display-value"><span class="value">4</span>px
@@ -664,7 +665,7 @@
 </script>
 <!--richText-->
 <script id="tpl_editor_richText" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label am-text-xs">上下边距 </label>
             <div class="am-u-sm-8 am-u-end"><input type="range" min="0" max="50" class="tpl-form-input">
@@ -833,7 +834,7 @@
 
 <!--goods-->
 <script id="tpl_editor_goods" type="text/template">
-    <form class="am-form tpl-form-line-form"><div data-item-class="switch-source" class="j-switch-box">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}"><div data-item-class="switch-source" class="j-switch-box">
             <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label am-text-xs">商品来源 </label>
                 <div class="am-u-sm-8 am-u-end">
@@ -1033,7 +1034,7 @@
 </script>
 <!--coupon-->
 <script id="tpl_editor_coupon" type="text/template">
-    <form class="am-form tpl-form-line-form"><div data-item-class="switch-source" class="j-switch-box"><div class="am-form-group"><label class="am-u-sm-3 am-form-label am-text-xs">商品来源 </label> <div class="am-u-sm-8 am-u-end"><label class="am-radio-inline"><input type="radio" value="auto" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 自动获取
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}"><div data-item-class="switch-source" class="j-switch-box"><div class="am-form-group"><label class="am-u-sm-3 am-form-label am-text-xs">商品来源 </label> <div class="am-u-sm-8 am-u-end"><label class="am-radio-inline"><input type="radio" value="auto" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 自动获取
                     </label> <label class="am-radio-inline"><input type="radio" value="choice" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 手动选择
                     </label></div></div> <div class="switch-source __choice" style="display: none;"><div class="form-items __goods am-cf"><div><div class="form-item drag"><i data-no-confirm="true" class="iconfont icon-shanchu item-delete"></i> <div class="item-inner"><div class="data-image"><img src="https://demo.yiovo.com/assets/store/img/diy/goods/01.png" alt=""></div></div></div><div class="form-item drag"><i data-no-confirm="true" class="iconfont icon-shanchu item-delete"></i> <div class="item-inner"><div class="data-image"><img src="https://demo.yiovo.com/assets/store/img/diy/goods/01.png" alt=""></div></div></div></div></div> <div class="j-selectGoods form-item-add"><i class="fa fa-plus"></i> 选择商品
                 </div></div> <div class="switch-source __auto"><div class="am-form-group"><label class="am-u-sm-3 am-form-label am-text-xs">商品分类 </label> <div class="am-u-sm-8 am-u-end"><select data-am-selected="{btnSize: 'sm',  placeholder:'全部分类', maxHeight: 400}"><option value="0"> -- 全部分类 --</option> </select></div></div> <div class="am-form-group"><label class="am-u-sm-3 am-form-label am-text-xs">商品排序 </label> <div class="am-u-sm-8 am-u-end"><label class="am-radio-inline"><input type="radio" value="all" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>
@@ -1056,7 +1057,7 @@
 </script>
 <!--bargainGoods-->
 <script id="tpl_editor_bargainGoods" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div data-item-class="switch-source" class="j-switch-box">
             <div class="am-form-group"><label class="am-u-sm-3 am-form-label am-text-xs">商品来源 </label>
                 <div class="am-u-sm-8 am-u-end"><label class="am-radio-inline"><input type="radio" value="auto" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 自动获取
@@ -1097,7 +1098,7 @@
 </script>
 <!--shop-->
 <script id="tpl_editor_shop" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
         <div data-item-class="switch-source" class="j-switch-box">
             <div class="am-form-group"><label class="am-u-sm-3 am-form-label am-text-xs">商品来源 </label>
                 <div class="am-u-sm-8 am-u-end"><label class="am-radio-inline"><input type="radio" value="auto" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span> 自动获取
@@ -1116,7 +1117,7 @@
 </script>
 <!--service-->
 <script id="tpl_editor_service" type="text/template">
-    <form class="am-form tpl-form-line-form">
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}">
 
         <div class="am-form-group"><label class="am-u-sm-3 am-form-label am-text-xs"> 底边距 </label>
             <div class="am-u-sm-8 am-u-end"><input type="range" min="0" max="100" class="tpl-form-input">
@@ -1166,43 +1167,43 @@
 </script>
 
 <script id="tpl_editor_page" type="text/template">
-    <div id="tpl_editor_page"><div class="editor-title"><span>页面设置</span></div>
-        <form class="am-form tpl-form-line-form"><div class="am-form-group">
-                <label class="am-u-sm-3 am-form-label am-text-xs">页面名称 </label>
-                <div class="am-u-sm-8 am-u-end">
-                    <input type="text" class="tpl-form-input">
-                    <div class="help-block am-margin-top-xs"><small>页面名称仅用于后台查找</small></div>
-                </div>
+    <form class="am-form tpl-form-line-form" data-itemid="{{ id }}"><div class="am-form-group">
+            <label class="am-u-sm-3 am-form-label am-text-xs">{{name}} </label>
+            <div class="am-u-sm-8 am-u-end">
+                <input type="text" class="tpl-form-input">
+                <div class="help-block am-margin-top-xs"><small>页面名称仅用于后台查找</small></div>
             </div>
-            <div class="am-form-group">
-                <label class="am-u-sm-3 am-form-label am-text-xs">页面标题 </label>
-                <div class="am-u-sm-8 am-u-end"><input type="text" class="tpl-form-input">
-                    <div class="help-block am-margin-top-xs"><small>小程序端顶部显示的标题</small></div>
-                </div>
+        </div>
+        <div class="am-form-group">
+            <label class="am-u-sm-3 am-form-label am-text-xs">{{params.title}} </label>
+            <div class="am-u-sm-8 am-u-end"><input type="text" class="tpl-form-input">
+                <div class="help-block am-margin-top-xs"><small>小程序端顶部显示的标题</small></div>
             </div>
-            <div class="am-form-group">
-                <label class="am-u-sm-3 am-form-label am-text-xs">分享标题 </label>
-                <div class="am-u-sm-8 am-u-end">
-                    <input type="text" class="tpl-form-input">
-                    <div class="help-block am-margin-top-xs"><small>小程序端转发时显示的标题</small></div>
-                </div>
+        </div>
+        <div class="am-form-group">
+            <label class="am-u-sm-3 am-form-label am-text-xs">{{params.share_title}}</label>
+            <div class="am-u-sm-8 am-u-end">
+                <input type="text" class="tpl-form-input">
+                <div class="help-block am-margin-top-xs"><small>小程序端转发时显示的标题</small></div>
             </div>
-            <div class="am-form-group">
-                <label class="am-u-sm-3 am-form-label am-text-xs">标题栏文字 </label>
-                <div class="am-u-sm-8 am-u-end">
-                    <label class="am-radio-inline"><input type="radio" value="black" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>黑色</label>
-                    <label class="am-radio-inline"><input type="radio" value="white" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>白色</label>
-                </div>
+        </div>
+        <div class="am-form-group">
+            <label class="am-u-sm-3 am-form-label am-text-xs">标题栏文字 </label>
+            <div class="am-u-sm-8 am-u-end">
+                <label class="am-radio-inline"><input type="radio" value="black" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>黑色</label>
+                <label class="am-radio-inline"><input type="radio" value="white" class="am-ucheck-radio"><span class="am-ucheck-icons"><i class="am-icon-unchecked"></i><i class="am-icon-checked"></i></span>白色</label>
             </div>
-            <div class="am-form-group">
-                <label class="am-u-sm-3 am-form-label am-text-xs">标题栏背景 </label>
-                <div class="am-u-sm-8 am-u-end">
-                    <input type="color"> <button type="button" class="btn-resetColor am-btn am-btn-xs">重置</button>
-                </div>
+        </div>
+        <div class="am-form-group">
+            <label class="am-u-sm-3 am-form-label am-text-xs">标题栏背景 </label>
+            <div class="am-u-sm-8 am-u-end">
+                <input type="color"> <button type="button" class="btn-resetColor am-btn am-btn-xs">重置</button>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
+
 </script>
+
 
 
 

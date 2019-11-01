@@ -14,6 +14,7 @@ class Goods extends Controller
 {
 	public function index(){
         $model = new SettingModel;
+        $filter = [];
         $list = $model->getList($filter);
         $title = '拼单管理';
         return $this->fetch('index', compact('title','list'));

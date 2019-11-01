@@ -105,6 +105,17 @@
                      */
                     selected: function () {
                         var $phoneMain = $(options.phoneMain);
+                        //header 选中事件
+                        var $page = $(options.page);
+                        $page.on('click', function(){
+                            var $header = $(this);
+                            $phoneMain.children().removeClass('selected');
+                            // $header.children().addClass('selecetd');
+                            // 渲染编辑器
+                            method.render.editor($header.data('itemid'),'page');
+                        });
+
+
                         $phoneMain.on('click', '.drag', function () {
                             var $drag = $(this);
                             if (!$drag.hasClass('selected')) {
@@ -112,7 +123,8 @@
                                 $phoneMain.children().removeClass('selected');
                                 $drag.addClass('selected');
                                 // 渲染编辑器
-                                method.render.editor($drag.data('itemid'));
+                                method.render.editor($drag.data('itemid'),'items');
+                                $page.children().removeClass('selected');
                             }
                         });
                     },
@@ -120,6 +132,7 @@
                     delete: function () {
                         var $phoneMain = $(options.phoneMain);
                         $phoneMain.on('click', '.btn-del', function () {
+                            alert('shanchu');
                             var $this = $(this);
                             layer.confirm('确定要删除吗？', function (index) {
                                 var $item = $this.parent().parent()
@@ -127,6 +140,7 @@
                                     , itemId = $item.data('itemid');
                                 method.diyData.deleteItem(itemId);
                                 $item.remove();
+                                console.log("===next item ", $nextItem);
                                 $nextItem.trigger('click');
                                 layer.close(index);
                             });
@@ -384,13 +398,16 @@
                  */
                 main: function () {
                     var html = '';
-                    console.log("==diy ddata items==",diyData.items);
+                    //渲染header
+                    pages = diyData.page;
+                    $(options.page).html(template('tpl_diy_'+ pages.type, pages));
 
                     //TODO 默認頁面
                     $.each(diyData.items, function (index, item) {
-                        console.log("==template==="+item.type,item);
                         html += template('tpl_diy_' + item.type, item);
                     });
+
+
                     $(options.phoneMain).html(html);
                 },
 
@@ -419,7 +436,7 @@
                         type: type
                     }, defaultData[type]);
 
-                    console.log("==新增==",diyData.items);
+                    // diyData.items[itemId].data[dataId] = data;
                     // 处理子元素集
                     if (item.hasOwnProperty('data')) {
                         var data = {};
@@ -440,12 +457,15 @@
                  * 渲染元素编辑器
                  * @param itemId
                  */
-                editor: function (itemId) {
-                    var item = diyData.items[itemId]
-                        , $form = $(template('tpl_editor_' + item.type, item));
+                editor: function (itemId, ele) {
+                    if(ele == 'page'){
+                        var item = diyData.page;
+                    }else{
+                        var item = diyData.items[itemId];
+                    }
+                    var $form = $(template('tpl_editor_' + item.type, item));
                     // 注册所有事件
                     method.editor.event.register($form, diyData);
-                    console.log("-===-=-=-=-=-=",$form)
                     // 写入编辑器
                     $('#diy-editor').find('.inner').html($form);
                     // // 注册文件上传
@@ -522,7 +542,7 @@
         // diy 数据
         diyData = data;
         // 配置信息
-        options = $.extend({}, {phoneMain: '#phone-main', editor: '#diy-editor'}, opts);
+        options = $.extend({}, {phoneMain: '#phone-main', editor: '#diy-editor', page: '#diy-page'}, opts);
         // 执行初始化
 
         method.init.execute();

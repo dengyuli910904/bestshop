@@ -14,6 +14,7 @@ class Goods extends Controller
 {
 	public function index(){
         $model = new CommentModel;
+        $filter = [];
         $list = $model->getList($filter);
         return $this->fetch('index', compact('list'));
     }

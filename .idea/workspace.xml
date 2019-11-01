@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ce71a97-18bc-477f-b7bc-d4be9c878641" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/source/application/common/model/GoodsComment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/application/store/controller/goods/Comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/store/diy,uzip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/application/store/controller/apps/sharing/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/application/store/controller/apps/sharing/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/application/store/controller/apps/sharing/Setting.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/application/store/controller/apps/sharing/Setting.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/application/store/controller/wxapp/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/application/store/controller/wxapp/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/application/store/model/WxappPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/application/store/model/WxappPage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/diy.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/diy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/editor.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/editor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/store/css/diy.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/store/css/diy.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/store/diy.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/store/diy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assets/store/js/diy.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/store/js/diy.js" afterDir="false" />
     </list>
     <ignored path="bestshop.iws" />
@@ -24,25 +30,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/source/application/store/view/layouts/layout.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1117">
-                    <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1929877163">
       <usages-collector id="statistics.lifecycle.project">
@@ -54,31 +41,36 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="38" />
-          <entry key="js" value="580" />
-          <entry key="php" value="2420" />
+          <entry key="js" value="1176" />
+          <entry key="php" value="2830" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="38" />
-          <entry key="JavaScript" value="580" />
-          <entry key="PHP" value="2420" />
+          <entry key="JavaScript" value="1176" />
+          <entry key="PHP" value="2830" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="js" value="4" />
-          <entry key="php" value="16" />
-          <entry key="sql" value="1" />
+          <entry key="js" value="7" />
+          <entry key="php" value="47" />
+          <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="16" />
-          <entry key="SQL" value="1" />
+          <entry key="JavaScript" value="7" />
+          <entry key="PHP" value="47" />
+          <entry key="SQL" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.php.new.class">
+        <counts>
+          <entry key="PHP Class.type" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -89,157 +81,105 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php">
+        <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/sharing/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="37" column="138" selection-start-line="37" selection-start-column="138" selection-end-line="37" selection-end-column="138" />
+            <state relative-caret-position="-228" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/wow/order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/wow/setting.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/wow/shopping.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="30" column="1" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/application/store/extra/menus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1653" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/application/common/model/Goods.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1691">
+              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/application/store/controller/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="626">
+              <caret line="123" column="61" lean-forward="true" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/application/store/controller/goods/Comment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="e#5850#268140#0#HTML" />
-                <element signature="e#36560#37586#0#HTML" />
-                <element signature="e#37607#136863#0#HTML" />
-                <element signature="e#137226#168253#0#HTML" />
-                <element signature="e#168274#169300#0#HTML" />
-                <element signature="e#169321#268577#0#HTML" />
-                <element signature="e#5861#5865#0#HTML" />
+                <element signature="e#6#82#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/store/css/diy.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="793" column="58" lean-forward="true" selection-start-line="793" selection-start-column="58" selection-end-line="793" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/application/store/controller/wxapp/Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="56" column="31" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="31" />
-              <folding>
-                <element signature="e#46#82#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/application/store/model/WxappPage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/diy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-              <folding>
-                <element signature="n#script#0;n#!!top" />
-                <element signature="n#script#1;n#!!top" />
-                <element signature="n#script#3;n#!!top" />
-                <element signature="n#script#4;n#!!top" />
-                <element signature="n#script#5;n#!!top" />
-                <element signature="n#script#6;n#!!top" />
-                <element signature="n#script#4;n#!!top" />
-                <element signature="n#script#5;n#!!top" />
-                <element signature="n#script#6;n#!!top" />
-                <element signature="n#script#7;n#!!top" />
-                <element signature="n#script#8;n#!!top" />
-                <element signature="n#script#9;n#!!top" />
-                <element signature="n#script#10;n#!!top" />
-                <element signature="n#script#11;n#!!top" />
-                <element signature="n#script#12;n#!!top" />
-                <element signature="n#script#13;n#!!top" />
-                <element signature="n#script#14;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/editor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="1200" column="22" lean-forward="true" selection-start-line="1200" selection-start-column="22" selection-end-line="1201" selection-end-column="18" />
-              <folding>
-                <element signature="n#script#5;n#!!top" />
-                <element signature="n#script#6;n#!!top" />
-                <element signature="n#script#4;n#!!top" />
-                <element signature="n#script#5;n#!!top" />
-                <element signature="n#script#6;n#!!top" />
-                <element signature="n#script#7;n#!!top" />
-                <element signature="n#script#8;n#!!top" />
-                <element signature="n#script#9;n#!!top" />
-                <element signature="n#script#10;n#!!top" />
-                <element signature="n#script#11;n#!!top" />
-                <element signature="n#script#12;n#!!top" />
-                <element signature="n#script#13;n#!!top" />
-                <element signature="n#script#14;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/application/common/model/WxappPage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/wxapp-html/js/zepto.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-415">
-              <caret line="820" column="18" selection-start-line="820" selection-start-column="18" selection-end-line="820" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/assets/store/js/diy.js">
+        <entry file="file://$PROJECT_DIR$/source/application/common/model/GoodsComment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="394" column="18" lean-forward="true" selection-start-line="394" selection-start-column="18" selection-end-line="394" selection-end-column="18" />
-              <folding>
-                <element signature="e#16288#16346#0" />
-                <element signature="e#16387#17143#0" />
-                <element signature="e#17166#17224#0" />
-                <element signature="e#17267#17889#0" />
-                <element signature="e#17932#18699#0" />
-                <element signature="e#18831#19462#0" />
-                <element signature="e#21652#25698#0" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/store/js/art-template.bak.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/source/application/store/controller/goods/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="46" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>register</find>
-      <find>get</find>
       <find>itemAdd</find>
       <find>extend</find>
       <find>main</find>
@@ -250,7 +190,6 @@
       <find>components</find>
       <find>phoneMain</find>
       <find>$phoneMain</find>
-      <find>spe</find>
       <find>tpl_editor_</find>
       <find>diy_</find>
       <find>hidden</find>
@@ -258,10 +197,19 @@
       <find>inser</find>
       <find>defaultData</find>
       <find>drag</find>
-      <find>editor</find>
       <find>渲染元素编辑器</find>
+      <find>__encode</find>
+      <find>spe</find>
+      <find>init</find>
       <find>diyData</find>
       <find>additemData</find>
+      <find>新增</find>
+      <find>https://demo.yiovo.com/</find>
+      <find>#diy</find>
+      <find>wxapp_page</find>
+      <find>console.log</find>
+      <find>page</find>
+      <find>editor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -303,13 +251,19 @@
         <option value="$PROJECT_DIR$/source/application/database.php" />
         <option value="$PROJECT_DIR$/source/application/common/model/WxappPage.php" />
         <option value="$PROJECT_DIR$/web/assets/store/js/art-template.js" />
-        <option value="$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/diy.php" />
         <option value="$PROJECT_DIR$/web/assets/store/css/diy.css" />
         <option value="$PROJECT_DIR$/source/application/store/model/WxappPage.php" />
-        <option value="$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php" />
-        <option value="$PROJECT_DIR$/source/application/store/controller/wxapp/Page.php" />
+        <option value="$PROJECT_DIR$/web/assets/store/diy,uzip.js" />
+        <option value="$PROJECT_DIR$/web/assets/store/diy.js" />
+        <option value="$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/diy.php" />
         <option value="$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/editor.php" />
+        <option value="$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php" />
         <option value="$PROJECT_DIR$/web/assets/store/js/diy.js" />
+        <option value="$PROJECT_DIR$/source/application/store/controller/wxapp/Page.php" />
+        <option value="$PROJECT_DIR$/source/application/store/controller/apps/sharing/Setting.php" />
+        <option value="$PROJECT_DIR$/source/application/store/controller/apps/sharing/Comment.php" />
+        <option value="$PROJECT_DIR$/source/application/store/controller/goods/Comment.php" />
+        <option value="$PROJECT_DIR$/source/application/common/model/GoodsComment.php" />
       </list>
     </option>
   </component>
@@ -329,11 +283,11 @@
       <path value="$PROJECT_DIR$/source/vendor/topthink/think-installer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="2552" />
-    <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2832" />
+    <option name="y" value="209" />
+    <option name="width" value="2560" />
+    <option name="height" value="1400" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -351,6 +305,17 @@
             <path>
               <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
               <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -358,6 +323,21 @@
               <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
@@ -365,6 +345,31 @@
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="extra" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
@@ -386,36 +391,6 @@
             <path>
               <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
               <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="tpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -430,14 +405,6 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bestshop-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bestshop-php" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -446,11 +413,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/Cellar/node/7.4.0/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -492,18 +459,18 @@
       <updated>1570765934855</updated>
       <workItem from="1571112030924" duration="6035000" />
       <workItem from="1571740470491" duration="849000" />
-      <workItem from="1571818678017" duration="31066000" />
+      <workItem from="1571818678017" duration="47780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37950000" />
+    <option name="totallyTimeSpent" value="54664000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2552" y="-8" width="2576" height="1416" extended-state="7" />
+    <frame x="2832" y="209" width="2560" height="1400" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09976152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1692" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -559,218 +526,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/doc/bestshop-html/applications/bargain/bargainlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="299" column="9" selection-start-line="219" selection-start-column="8" selection-end-line="299" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/apps/sharing/goods/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="68" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/apps/bargain/active/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="16" column="140" selection-start-line="16" selection-start-column="140" selection-end-line="16" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/apps/dealer/apply/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="56" column="61" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/dealer/Apply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/dealer/Setting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/bestshop-html/applications/bargain/bargain_create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="427" column="9" selection-start-line="220" selection-start-column="8" selection-end-line="427" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/wxapp-html/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="117" column="10" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/wxapp-html/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/apps/bargain/active/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="183" column="64" selection-start-line="183" selection-start-column="64" selection-end-line="183" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/api/controller/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/bestshop-html/about_files_test/app.js.下载">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="239" column="27" selection-start-line="239" selection-start-column="27" selection-end-line="239" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/Wxapp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/Goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/goods/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/store/js/select.data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/api/controller/Goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="29" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/data/Goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/bargain/active.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="27" column="33" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/bargain/task.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="29" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/bargain/setting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/wow/shopping.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="30" column="1" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/wow/setting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/wow/order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/order/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="97" column="43" selection-start-line="92" selection-start-column="32" selection-end-line="97" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/common/model/Goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="136" column="27" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/model/Setting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/common/model/Setting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/20191008142337b25767762.jpg" />
-    <entry file="file://$PROJECT_DIR$/web/uploads/20191008142222550ee6118.jpg" />
-    <entry file="file://$PROJECT_DIR$/web/assets/store/diy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3468" selection-start-column="3465" selection-end-column="3468" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/application/store/model/Goods.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -782,13 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="53" column="81" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -813,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/layouts/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1117">
-          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/store/js/art-template.bak.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -840,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/store/css/diy.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
@@ -864,17 +598,111 @@
     <entry file="file://$PROJECT_DIR$/source/application/store/model/WxappPage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/store/diy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/store/diy,uzip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/database/install.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4081" column="81" selection-start-line="4081" selection-start-column="81" selection-end-line="4081" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/diy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="n#script#0;n#!!top" />
+            <element signature="n#script#4;n#!!top" />
+            <element signature="n#script#5;n#!!top" />
+            <element signature="n#script#6;n#!!top" />
+            <element signature="n#script#4;n#!!top" />
+            <element signature="n#script#5;n#!!top" />
+            <element signature="n#script#6;n#!!top" />
+            <element signature="n#script#7;n#!!top" />
+            <element signature="n#script#8;n#!!top" />
+            <element signature="n#script#9;n#!!top" />
+            <element signature="n#script#10;n#!!top" />
+            <element signature="n#script#11;n#!!top" />
+            <element signature="n#script#12;n#!!top" />
+            <element signature="n#script#13;n#!!top" />
+            <element signature="n#script#14;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/editor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="135" column="22" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+          <folding>
+            <element signature="n#script#1;n#!!top" />
+            <element signature="n#script#11;n#!!top" />
+            <element signature="n#script#21;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/store/js/diy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-379">
+          <caret line="142" column="72" lean-forward="true" selection-start-line="142" selection-start-column="72" selection-end-line="142" selection-end-column="72" />
+          <folding>
+            <element signature="e#16288#16346#0" />
+            <element signature="e#16387#17143#0" />
+            <element signature="e#17166#17224#0" />
+            <element signature="e#18831#19462#0" />
+            <element signature="e#21652#25698#0" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#25748#30886#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/links.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="53" column="81" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/wxapp/Help.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="37" column="138" selection-start-line="37" selection-start-column="138" selection-end-line="37" selection-end-column="138" />
+        <state relative-caret-position="779">
+          <caret line="6352" column="34" lean-forward="true" selection-start-line="6352" selection-start-column="34" selection-end-line="6352" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="e#5850#268140#0#HTML" />
@@ -883,83 +711,173 @@
             <element signature="e#137226#168253#0#HTML" />
             <element signature="e#168274#169300#0#HTML" />
             <element signature="e#169321#268577#0#HTML" />
-            <element signature="e#5861#5865#0#HTML" />
+            <element signature="e#268500#268504#0#HTML" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/application/store/controller/wxapp/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="31" />
+        <state relative-caret-position="1060">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#46#82#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/editor.php">
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/Wxapp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="1200" column="22" lean-forward="true" selection-start-line="1200" selection-start-column="22" selection-end-line="1201" selection-end-column="18" />
+        <state relative-caret-position="741">
+          <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/setting.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/tabbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/bargain/active.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/bargain/setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/bargain/task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="29" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/dealer/Apply.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/dealer/Order.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/dealer/Setting.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/dealer/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/dealer/Withdrawal.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/sharing/Active.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/sharing/Setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/sharing/Refund.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/sharing/Order.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/sharing/Goods.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/sharing/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/sharing/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/wow/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/wow/setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/apps/wow/shopping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="30" column="1" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/extra/menus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1653" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="123" column="61" lean-forward="true" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/goods/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/store/controller/goods/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="n#script#5;n#!!top" />
-            <element signature="n#script#6;n#!!top" />
-            <element signature="n#script#4;n#!!top" />
-            <element signature="n#script#5;n#!!top" />
-            <element signature="n#script#6;n#!!top" />
-            <element signature="n#script#7;n#!!top" />
-            <element signature="n#script#8;n#!!top" />
-            <element signature="n#script#9;n#!!top" />
-            <element signature="n#script#10;n#!!top" />
-            <element signature="n#script#11;n#!!top" />
-            <element signature="n#script#12;n#!!top" />
-            <element signature="n#script#13;n#!!top" />
-            <element signature="n#script#14;n#!!top" />
+            <element signature="e#6#82#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/application/store/view/wxapp/page/tpl/diy.php">
+    <entry file="file://$PROJECT_DIR$/source/application/common/model/Goods.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding>
-            <element signature="n#script#0;n#!!top" />
-            <element signature="n#script#1;n#!!top" />
-            <element signature="n#script#3;n#!!top" />
-            <element signature="n#script#4;n#!!top" />
-            <element signature="n#script#5;n#!!top" />
-            <element signature="n#script#6;n#!!top" />
-            <element signature="n#script#4;n#!!top" />
-            <element signature="n#script#5;n#!!top" />
-            <element signature="n#script#6;n#!!top" />
-            <element signature="n#script#7;n#!!top" />
-            <element signature="n#script#8;n#!!top" />
-            <element signature="n#script#9;n#!!top" />
-            <element signature="n#script#10;n#!!top" />
-            <element signature="n#script#11;n#!!top" />
-            <element signature="n#script#12;n#!!top" />
-            <element signature="n#script#13;n#!!top" />
-            <element signature="n#script#14;n#!!top" />
-          </folding>
+        <state relative-caret-position="-1691">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/store/js/diy.js">
+    <entry file="file://$PROJECT_DIR$/source/application/store/view/layouts/layout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="394" column="18" lean-forward="true" selection-start-line="394" selection-start-column="18" selection-end-line="394" selection-end-column="18" />
-          <folding>
-            <element signature="e#16288#16346#0" />
-            <element signature="e#16387#17143#0" />
-            <element signature="e#17166#17224#0" />
-            <element signature="e#17267#17889#0" />
-            <element signature="e#17932#18699#0" />
-            <element signature="e#18831#19462#0" />
-            <element signature="e#21652#25698#0" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="1060">
+          <caret line="103" column="82" lean-forward="true" selection-start-line="103" selection-start-column="82" selection-end-line="103" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/application/common/model/GoodsComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
