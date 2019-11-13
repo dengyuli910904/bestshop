@@ -225,11 +225,11 @@ return [
                 'submenu' => [
                     [
                         'name' => '优惠券列表',
-                        'index' => 'setting/store',
+                        'index' => 'marketing/index',
                     ],
                     [
                         'name' => '领取记录',
-                        'index' => 'setting/store',
+                        'index' => 'marketing/receive',
                     ]
                 ],
             ],

@@ -8,9 +8,15 @@
 
 namespace app\store\model;
 use app\common\model\Coupon as CouponModel;
-
+use think\Request;
 
 class Coupon extends CouponModel
 {
-
+    public function getList()
+    {
+        return $this->order(['sort' => 'asc'])
+            ->paginate(15, false, [
+                'query' => Request::instance()->request()
+            ]);
+    }
 }
