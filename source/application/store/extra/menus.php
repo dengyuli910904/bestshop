@@ -217,7 +217,7 @@ return [
     'marketing' => [
         'name' => '营销管理',
         'icon' => 'icon-marketing',
-        'index' => 'marketing/index',
+        'index' => 'marketing.coupon/index',
         'submenu' => [
             [
                 'name' => '优惠券',
@@ -225,11 +225,11 @@ return [
                 'submenu' => [
                     [
                         'name' => '优惠券列表',
-                        'index' => 'marketing/index',
+                        'index' => 'marketing.coupon/index',
                     ],
                     [
                         'name' => '领取记录',
-                        'index' => 'marketing/receive',
+                        'index' => 'marketing.coupon/receive',
                     ]
                 ],
             ],
@@ -239,11 +239,11 @@ return [
                 'submenu' => [
                     [
                         'name' => '充值套餐',
-                        'index' => 'setting/store',
+                        'index' => 'marketing.recharge/index',
                     ],
                     [
                         'name' => '充值设置',
-                        'index' => 'setting/store',
+                        'index' => 'marketing.recharge/setting',
                     ],
                 ],
             ],
@@ -253,11 +253,11 @@ return [
                 'submenu' => [
                     [
                         'name' => '积分设置',
-                        'index' => 'setting/store',
+                        'index' => 'marketing.points/setting',
                     ],
                     [
                         'name' => '积分明细',
-                        'index' => 'setting/store',
+                        'index' => 'marketing.points/log',
                     ],
                 ],
             ],
@@ -267,17 +267,17 @@ return [
                 'submenu' => [
                     [
                         'name' => '发送消息',
-                        'index' => 'setting/store',
+                        'index' => 'marketing.push/send',
                     ],
                     [
                         'name' => '活跃用户',
-                        'index' => 'setting/store',
+                        'index' => 'marketing.push/user',
                     ],
                 ],
             ],
             [
                 'name' => '满额包邮',
-                'index' => 'wxapp/setting',
+                'index' => 'marketing.basic/index',
             ],
         ],
     ],
