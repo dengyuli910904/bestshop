@@ -10,6 +10,7 @@ namespace app\store\controller\marketing;
 
 use app\store\controller\Controller;
 use app\store\model\Coupon as CouponModel;
+use think\Request;
 
 class Coupon extends Controller
 {
@@ -21,6 +22,15 @@ class Coupon extends Controller
 
     public function create(){
         return $this->fetch('create');
+    }
+
+    public function add(){
+        $model = new CouponModel;
+        if ($model->add($this->postData('coupon'))) {
+            return $this->renderSuccess('添加成功', url('marketing.coupon/index'));
+        }
+        $error = $model->getError() ?: '添加失败';
+        return $this->renderError($error);
     }
 
     public function edit(){

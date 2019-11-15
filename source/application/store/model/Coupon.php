@@ -19,4 +19,16 @@ class Coupon extends CouponModel
                 'query' => Request::instance()->request()
             ]);
     }
+
+    /**
+     * 添加优惠券
+     * @param array $data
+     * @return bool
+     */
+    public function add(array $data)
+    {
+        $data['wxapp_id'] = self::$wxapp_id;
+        $this->allowField(true)->save($data);
+        return true;
+    }
 }
